@@ -171,8 +171,8 @@ export default function WritingModal({
 
   const tabs = [
     { id: 'write' as TabType, label: '쓰기 연습' },
-    { id: 'animation' as TabType, label: '획순 애니메이션' },
-    { id: 'steps' as TabType, label: '단계별 보기' },
+    { id: 'animation' as TabType, label: '애니메이션' },
+    { id: 'steps' as TabType, label: '단계별' },
   ]
 
   return (
