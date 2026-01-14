@@ -109,6 +109,13 @@ export default function Home() {
 
           <div className="w-full max-w-md space-y-4 mt-8">
             <button
+              onClick={() => router.push('/study')}
+              className="w-full py-6 px-6 bg-purple-600 hover:bg-purple-700 text-white text-xl font-bold rounded-lg transition-colors shadow-lg"
+            >
+              히라가나 / 카타카나 공부
+            </button>
+
+            <button
               onClick={() => router.push('/quiz-setup')}
               className="w-full py-6 px-6 bg-blue-600 hover:bg-blue-700 text-white text-xl font-bold rounded-lg transition-colors shadow-lg"
             >
