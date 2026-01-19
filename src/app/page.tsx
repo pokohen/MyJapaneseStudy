@@ -108,7 +108,7 @@ export default function Home() {
 
           <div className="w-full max-w-md space-y-4 mt-8">
             <Button
-              onClick={() => router.push('/study')}
+              onClick={() => router.push('/monji-study')}
               className="w-full py-6 px-6 bg-purple-600 hover:bg-purple-700 text-white text-xl font-bold rounded-lg transition-colors shadow-lg"
             >
               히라가나 / 가타카나 공부
@@ -119,6 +119,13 @@ export default function Home() {
               className="w-full py-6 px-6 bg-blue-600 hover:bg-blue-700 text-white text-xl font-bold rounded-lg transition-colors shadow-lg"
             >
               히라가나 / 가타카나 퀴즈
+            </Button>
+
+            <Button
+              onClick={() => router.push('/kanji-study')}
+              className="w-full py-6 px-6 bg-lime-600 hover:bg-lime-700 text-white text-xl font-bold rounded-lg transition-colors shadow-lg"
+            >
+              한자 공부
             </Button>
 
             <Button
