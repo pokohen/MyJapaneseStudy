@@ -131,7 +131,7 @@ export default function MonjiStudyPage() {
                 : 'bg-white dark:bg-zinc-800 text-black dark:text-white'
             }`}
           >
-            카타카나
+            가타카나
           </Button>
         </div>
 

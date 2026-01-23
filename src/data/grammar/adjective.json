@@ -1,0 +1,315 @@
+{
+  "id": "adjectives",
+  "title": "형용사",
+  "description": "일본어 い형용사와 な형용사의 활용",
+  "types": [
+    {
+      "id": "i-adjective",
+      "name": "い형용사",
+      "description": "어미가 い로 끝나는 형용사 (단, きれい, 嫌い 등은 な형용사)",
+      "conjugations": [
+        {
+          "form": "현재 긍정",
+          "rule": "그대로",
+          "formal": "い + です",
+          "example": {
+            "word": "高い",
+            "reading": "たかい",
+            "casual": "高い",
+            "polite": "高いです",
+            "meaning": "비싸다/높다"
+          }
+        },
+        {
+          "form": "현재 부정",
+          "rule": "い → くない",
+          "formal": "くないです / くありません",
+          "example": {
+            "word": "高い",
+            "reading": "たかい",
+            "casual": "高くない",
+            "polite": "高くないです / 高くありません",
+            "meaning": "비싸지 않다"
+          }
+        },
+        {
+          "form": "과거 긍정",
+          "rule": "い → かった",
+          "formal": "かったです",
+          "example": {
+            "word": "高い",
+            "reading": "たかい",
+            "casual": "高かった",
+            "polite": "高かったです",
+            "meaning": "비쌌다"
+          }
+        },
+        {
+          "form": "과거 부정",
+          "rule": "い → くなかった",
+          "formal": "くなかったです / くありませんでした",
+          "example": {
+            "word": "高い",
+            "reading": "たかい",
+            "casual": "高くなかった",
+            "polite": "高くなかったです / 高くありませんでした",
+            "meaning": "비싸지 않았다"
+          }
+        },
+        {
+          "form": "て형 (연결)",
+          "rule": "い → くて",
+          "example": {
+            "word": "高い",
+            "reading": "たかい",
+            "conjugated": "高くて",
+            "meaning": "비싸고"
+          }
+        },
+        {
+          "form": "명사 수식",
+          "rule": "그대로 + 명사",
+          "example": {
+            "word": "高い",
+            "reading": "たかい",
+            "conjugated": "高いビル",
+            "meaning": "높은 빌딩"
+          }
+        },
+        {
+          "form": "부사형",
+          "rule": "い → く",
+          "example": {
+            "word": "早い",
+            "reading": "はやい",
+            "conjugated": "早く起きる",
+            "meaning": "일찍 일어나다"
+          }
+        }
+      ],
+      "commonWords": [
+        { "word": "大きい", "reading": "おおきい", "meaning": "크다" },
+        { "word": "小さい", "reading": "ちいさい", "meaning": "작다" },
+        { "word": "高い", "reading": "たかい", "meaning": "비싸다/높다" },
+        { "word": "安い", "reading": "やすい", "meaning": "싸다" },
+        { "word": "新しい", "reading": "あたらしい", "meaning": "새롭다" },
+        { "word": "古い", "reading": "ふるい", "meaning": "오래되다" },
+        { "word": "良い/いい", "reading": "よい/いい", "meaning": "좋다" },
+        { "word": "悪い", "reading": "わるい", "meaning": "나쁘다" },
+        { "word": "暑い", "reading": "あつい", "meaning": "덥다" },
+        { "word": "寒い", "reading": "さむい", "meaning": "춥다" },
+        { "word": "熱い", "reading": "あつい", "meaning": "뜨겁다" },
+        { "word": "冷たい", "reading": "つめたい", "meaning": "차갑다" },
+        { "word": "楽しい", "reading": "たのしい", "meaning": "즐겁다" },
+        { "word": "難しい", "reading": "むずかしい", "meaning": "어렵다" },
+        { "word": "易しい", "reading": "やさしい", "meaning": "쉽다" },
+        { "word": "忙しい", "reading": "いそがしい", "meaning": "바쁘다" },
+        { "word": "美味しい", "reading": "おいしい", "meaning": "맛있다" },
+        { "word": "まずい", "reading": "まずい", "meaning": "맛없다" },
+        { "word": "面白い", "reading": "おもしろい", "meaning": "재미있다" },
+        { "word": "つまらない", "reading": "つまらない", "meaning": "재미없다" },
+        { "word": "嬉しい", "reading": "うれしい", "meaning": "기쁘다" },
+        { "word": "悲しい", "reading": "かなしい", "meaning": "슬프다" },
+        { "word": "眠い", "reading": "ねむい", "meaning": "졸리다" },
+        { "word": "痛い", "reading": "いたい", "meaning": "아프다" },
+        { "word": "怖い", "reading": "こわい", "meaning": "무섭다" },
+        { "word": "長い", "reading": "ながい", "meaning": "길다" },
+        { "word": "短い", "reading": "みじかい", "meaning": "짧다" },
+        { "word": "広い", "reading": "ひろい", "meaning": "넓다" },
+        { "word": "狭い", "reading": "せまい", "meaning": "좁다" },
+        { "word": "明るい", "reading": "あかるい", "meaning": "밝다" },
+        { "word": "暗い", "reading": "くらい", "meaning": "어둡다" },
+        { "word": "甘い", "reading": "あまい", "meaning": "달다" },
+        { "word": "辛い", "reading": "からい", "meaning": "맵다" },
+        { "word": "若い", "reading": "わかい", "meaning": "젊다" },
+        { "word": "遅い", "reading": "おそい", "meaning": "늦다/느리다" },
+        { "word": "早い/速い", "reading": "はやい", "meaning": "이르다/빠르다" },
+        { "word": "強い", "reading": "つよい", "meaning": "강하다" },
+        { "word": "弱い", "reading": "よわい", "meaning": "약하다" },
+        { "word": "多い", "reading": "おおい", "meaning": "많다" },
+        { "word": "少ない", "reading": "すくない", "meaning": "적다" }
+      ],
+      "irregularConjugation": {
+        "word": "いい/良い",
+        "note": "いい는 활용할 때 よ-로 바뀜",
+        "forms": {
+          "present": "いい / 良い",
+          "negative": "よくない",
+          "past": "よかった",
+          "pastNegative": "よくなかった",
+          "te": "よくて",
+          "adverb": "よく"
+        }
+      }
+    },
+    {
+      "id": "na-adjective",
+      "name": "な형용사",
+      "description": "명사를 수식할 때 な를 붙이는 형용사 (형용동사라고도 함)",
+      "conjugations": [
+        {
+          "form": "현재 긍정",
+          "rule": "だ (반말) / です (정중)",
+          "example": {
+            "word": "静か",
+            "reading": "しずか",
+            "casual": "静かだ",
+            "polite": "静かです",
+            "meaning": "조용하다"
+          }
+        },
+        {
+          "form": "현재 부정",
+          "rule": "じゃない / ではない",
+          "formal": "じゃないです / ではありません",
+          "example": {
+            "word": "静か",
+            "reading": "しずか",
+            "casual": "静かじゃない",
+            "polite": "静かじゃないです / 静かではありません",
+            "meaning": "조용하지 않다"
+          }
+        },
+        {
+          "form": "과거 긍정",
+          "rule": "だった",
+          "formal": "でした",
+          "example": {
+            "word": "静か",
+            "reading": "しずか",
+            "casual": "静かだった",
+            "polite": "静かでした",
+            "meaning": "조용했다"
+          }
+        },
+        {
+          "form": "과거 부정",
+          "rule": "じゃなかった / ではなかった",
+          "formal": "じゃなかったです / ではありませんでした",
+          "example": {
+            "word": "静か",
+            "reading": "しずか",
+            "casual": "静かじゃなかった",
+            "polite": "静かじゃなかったです / 静かではありませんでした",
+            "meaning": "조용하지 않았다"
+          }
+        },
+        {
+          "form": "て형 (연결)",
+          "rule": "で",
+          "example": {
+            "word": "静か",
+            "reading": "しずか",
+            "conjugated": "静かで",
+            "meaning": "조용하고"
+          }
+        },
+        {
+          "form": "명사 수식",
+          "rule": "な + 명사",
+          "example": {
+            "word": "静か",
+            "reading": "しずか",
+            "conjugated": "静かな部屋",
+            "meaning": "조용한 방"
+          }
+        },
+        {
+          "form": "부사형",
+          "rule": "に",
+          "example": {
+            "word": "静か",
+            "reading": "しずか",
+            "conjugated": "静かに話す",
+            "meaning": "조용히 말하다"
+          }
+        }
+      ],
+      "commonWords": [
+        { "word": "静か", "reading": "しずか", "meaning": "조용하다" },
+        { "word": "賑やか", "reading": "にぎやか", "meaning": "활기차다/북적이다" },
+        { "word": "元気", "reading": "げんき", "meaning": "건강하다/활기차다" },
+        { "word": "有名", "reading": "ゆうめい", "meaning": "유명하다" },
+        { "word": "親切", "reading": "しんせつ", "meaning": "친절하다" },
+        { "word": "丁寧", "reading": "ていねい", "meaning": "정중하다/꼼꼼하다" },
+        { "word": "便利", "reading": "べんり", "meaning": "편리하다" },
+        { "word": "不便", "reading": "ふべん", "meaning": "불편하다" },
+        { "word": "簡単", "reading": "かんたん", "meaning": "간단하다" },
+        { "word": "複雑", "reading": "ふくざつ", "meaning": "복잡하다" },
+        { "word": "大切", "reading": "たいせつ", "meaning": "소중하다" },
+        { "word": "大事", "reading": "だいじ", "meaning": "중요하다" },
+        { "word": "必要", "reading": "ひつよう", "meaning": "필요하다" },
+        { "word": "大変", "reading": "たいへん", "meaning": "힘들다/큰일이다" },
+        { "word": "暇", "reading": "ひま", "meaning": "한가하다" },
+        { "word": "好き", "reading": "すき", "meaning": "좋아하다" },
+        { "word": "嫌い", "reading": "きらい", "meaning": "싫어하다" },
+        { "word": "上手", "reading": "じょうず", "meaning": "잘하다" },
+        { "word": "下手", "reading": "へた", "meaning": "못하다" },
+        { "word": "得意", "reading": "とくい", "meaning": "자신있다/잘하다" },
+        { "word": "苦手", "reading": "にがて", "meaning": "서투르다/어려워하다" },
+        { "word": "安全", "reading": "あんぜん", "meaning": "안전하다" },
+        { "word": "危険", "reading": "きけん", "meaning": "위험하다" },
+        { "word": "特別", "reading": "とくべつ", "meaning": "특별하다" },
+        { "word": "普通", "reading": "ふつう", "meaning": "보통이다" },
+        { "word": "きれい", "reading": "きれい", "meaning": "예쁘다/깨끗하다", "note": "い로 끝나지만 な형용사" },
+        { "word": "有名", "reading": "ゆうめい", "meaning": "유명하다" },
+        { "word": "真面目", "reading": "まじめ", "meaning": "성실하다" },
+        { "word": "素敵", "reading": "すてき", "meaning": "멋지다" },
+        { "word": "立派", "reading": "りっぱ", "meaning": "훌륭하다" },
+        { "word": "自由", "reading": "じゆう", "meaning": "자유롭다" },
+        { "word": "不思議", "reading": "ふしぎ", "meaning": "신기하다/이상하다" },
+        { "word": "残念", "reading": "ざんねん", "meaning": "아쉽다/유감이다" },
+        { "word": "心配", "reading": "しんぱい", "meaning": "걱정되다" },
+        { "word": "無理", "reading": "むり", "meaning": "무리다" }
+      ],
+      "lookAlikeIAdjectives": {
+        "description": "い로 끝나지만 な형용사인 단어들 (주의!)",
+        "words": [
+          { "word": "きれい", "reading": "きれい", "meaning": "예쁘다/깨끗하다" },
+          { "word": "嫌い", "reading": "きらい", "meaning": "싫어하다" },
+          { "word": "有名", "reading": "ゆうめい", "meaning": "유명하다" }
+        ]
+      }
+    }
+  ],
+  "comparisonTable": {
+    "title": "い형용사 vs な형용사 활용 비교",
+    "forms": [
+      {
+        "form": "현재 긍정",
+        "iAdj": "高い / 高いです",
+        "naAdj": "静かだ / 静かです"
+      },
+      {
+        "form": "현재 부정",
+        "iAdj": "高くない / 高くないです",
+        "naAdj": "静かじゃない / 静かじゃないです"
+      },
+      {
+        "form": "과거 긍정",
+        "iAdj": "高かった / 高かったです",
+        "naAdj": "静かだった / 静かでした"
+      },
+      {
+        "form": "과거 부정",
+        "iAdj": "高くなかった / 高くなかったです",
+        "naAdj": "静かじゃなかった / 静かじゃなかったです"
+      },
+      {
+        "form": "て형",
+        "iAdj": "高くて",
+        "naAdj": "静かで"
+      },
+      {
+        "form": "명사 수식",
+        "iAdj": "高い + 명사",
+        "naAdj": "静かな + 명사"
+      },
+      {
+        "form": "부사형",
+        "iAdj": "高く",
+        "naAdj": "静かに"
+      }
+    ]
+  }
+}

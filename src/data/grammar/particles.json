@@ -1,0 +1,772 @@
+{
+  "id": "particles",
+  "title": "조사",
+  "description": "일본어의 주요 조사 (助詞)",
+  "particles": [
+    {
+      "id": "wa",
+      "particle": "は",
+      "reading": "wa",
+      "level": "N5",
+      "name": "주제 조사",
+      "mainUsage": "주제/화제를 나타냄 (~은/는)",
+      "usages": [
+        {
+          "usage": "주제 제시",
+          "description": "문장의 주제를 나타낸다",
+          "examples": [
+            {
+              "japanese": "私は学生です。",
+              "reading": "わたしはがくせいです。",
+              "korean": "저는 학생입니다."
+            },
+            {
+              "japanese": "今日は暑いですね。",
+              "reading": "きょうはあついですね。",
+              "korean": "오늘은 덥네요."
+            }
+          ]
+        },
+        {
+          "usage": "대조",
+          "description": "다른 것과 대조할 때 사용",
+          "examples": [
+            {
+              "japanese": "肉は食べますが、魚は食べません。",
+              "reading": "にくはたべますが、さかなはたべません。",
+              "korean": "고기는 먹지만, 생선은 안 먹어요."
+            }
+          ]
+        }
+      ],
+      "vsGa": {
+        "description": "は vs が의 차이",
+        "points": [
+          "は: 이미 알려진 정보, 화제 제시",
+          "が: 새로운 정보, 주어 강조",
+          "「誰が来ましたか」「田中さんが来ました」 - 새 정보이므로 が",
+          "「田中さんは来ましたか」「はい、来ました」 - 이미 아는 사람이므로 は"
+        ]
+      }
+    },
+    {
+      "id": "ga",
+      "particle": "が",
+      "reading": "ga",
+      "level": "N5",
+      "name": "주격 조사",
+      "mainUsage": "주어를 나타냄 (~이/가)",
+      "usages": [
+        {
+          "usage": "주어 표시",
+          "description": "동작/상태의 주체를 나타낸다",
+          "examples": [
+            {
+              "japanese": "雨が降っています。",
+              "reading": "あめがふっています。",
+              "korean": "비가 내리고 있습니다."
+            },
+            {
+              "japanese": "誰が来ましたか。",
+              "reading": "だれがきましたか。",
+              "korean": "누가 왔어요?"
+            }
+          ]
+        },
+        {
+          "usage": "좋아함/능력의 대상",
+          "description": "好き, 嫌い, 上手, 下手, わかる, できる 등과 함께",
+          "examples": [
+            {
+              "japanese": "私は日本語が好きです。",
+              "reading": "わたしはにほんごがすきです。",
+              "korean": "저는 일본어를 좋아합니다."
+            },
+            {
+              "japanese": "彼は英語ができます。",
+              "reading": "かれはえいごができます。",
+              "korean": "그는 영어를 할 수 있습니다."
+            }
+          ]
+        },
+        {
+          "usage": "존재의 주어",
+          "description": "ある, いる와 함께 사용",
+          "examples": [
+            {
+              "japanese": "机の上に本があります。",
+              "reading": "つくえのうえにほんがあります。",
+              "korean": "책상 위에 책이 있습니다."
+            }
+          ]
+        },
+        {
+          "usage": "역접",
+          "description": "~지만 (but)의 의미로 문장 연결",
+          "examples": [
+            {
+              "japanese": "行きたいですが、時間がありません。",
+              "reading": "いきたいですが、じかんがありません。",
+              "korean": "가고 싶지만, 시간이 없습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wo",
+      "particle": "を",
+      "reading": "o",
+      "level": "N5",
+      "name": "목적격 조사",
+      "mainUsage": "동작의 대상을 나타냄 (~을/를)",
+      "usages": [
+        {
+          "usage": "직접 목적어",
+          "description": "동작의 대상을 나타낸다",
+          "examples": [
+            {
+              "japanese": "ご飯を食べます。",
+              "reading": "ごはんをたべます。",
+              "korean": "밥을 먹습니다."
+            },
+            {
+              "japanese": "本を読みます。",
+              "reading": "ほんをよみます。",
+              "korean": "책을 읽습니다."
+            },
+            {
+              "japanese": "日本語を勉強しています。",
+              "reading": "にほんごをべんきょうしています。",
+              "korean": "일본어를 공부하고 있습니다."
+            }
+          ]
+        },
+        {
+          "usage": "이동 경로/출발점",
+          "description": "통과하는 장소나 떠나는 장소를 나타낸다",
+          "examples": [
+            {
+              "japanese": "公園を散歩します。",
+              "reading": "こうえんをさんぽします。",
+              "korean": "공원을 산책합니다."
+            },
+            {
+              "japanese": "駅を出ます。",
+              "reading": "えきをでます。",
+              "korean": "역을 나갑니다."
+            },
+            {
+              "japanese": "大学を卒業しました。",
+              "reading": "だいがくをそつぎょうしました。",
+              "korean": "대학을 졸업했습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ni",
+      "particle": "に",
+      "reading": "ni",
+      "level": "N5",
+      "name": "다목적 조사",
+      "mainUsage": "시간, 장소, 대상 등 다양한 용도",
+      "usages": [
+        {
+          "usage": "시간",
+          "description": "구체적인 시간을 나타낸다",
+          "examples": [
+            {
+              "japanese": "7時に起きます。",
+              "reading": "しちじにおきます。",
+              "korean": "7시에 일어납니다."
+            },
+            {
+              "japanese": "月曜日に会いましょう。",
+              "reading": "げつようびにあいましょう。",
+              "korean": "월요일에 만나요."
+            }
+          ],
+          "note": "今日, 明日, 毎日, 来週 등에는 に를 붙이지 않음"
+        },
+        {
+          "usage": "존재 장소",
+          "description": "ある, いる와 함께 존재하는 장소를 나타낸다",
+          "examples": [
+            {
+              "japanese": "部屋に猫がいます。",
+              "reading": "へやにねこがいます。",
+              "korean": "방에 고양이가 있습니다."
+            },
+            {
+              "japanese": "東京に住んでいます。",
+              "reading": "とうきょうにすんでいます。",
+              "korean": "도쿄에 살고 있습니다."
+            }
+          ]
+        },
+        {
+          "usage": "도착점/목적지",
+          "description": "이동의 도착점을 나타낸다",
+          "examples": [
+            {
+              "japanese": "学校に行きます。",
+              "reading": "がっこうにいきます。",
+              "korean": "학교에 갑니다."
+            },
+            {
+              "japanese": "電車に乗ります。",
+              "reading": "でんしゃにのります。",
+              "korean": "전철에 탑니다."
+            }
+          ]
+        },
+        {
+          "usage": "상대/대상",
+          "description": "행위의 상대를 나타낸다",
+          "examples": [
+            {
+              "japanese": "友達に手紙を書きます。",
+              "reading": "ともだちにてがみをかきます。",
+              "korean": "친구에게 편지를 씁니다."
+            },
+            {
+              "japanese": "先生に聞きます。",
+              "reading": "せんせいにききます。",
+              "korean": "선생님에게 물어봅니다."
+            }
+          ]
+        },
+        {
+          "usage": "목적",
+          "description": "동작의 목적을 나타낸다 (동사 ます형 + に行く/来る)",
+          "examples": [
+            {
+              "japanese": "買い物に行きます。",
+              "reading": "かいものにいきます。",
+              "korean": "쇼핑하러 갑니다."
+            },
+            {
+              "japanese": "映画を見に行きます。",
+              "reading": "えいがをみにいきます。",
+              "korean": "영화를 보러 갑니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "de",
+      "particle": "で",
+      "reading": "de",
+      "level": "N5",
+      "name": "수단/장소 조사",
+      "mainUsage": "수단, 동작이 일어나는 장소",
+      "usages": [
+        {
+          "usage": "동작의 장소",
+          "description": "동작이 일어나는 장소를 나타낸다",
+          "examples": [
+            {
+              "japanese": "図書館で勉強します。",
+              "reading": "としょかんでべんきょうします。",
+              "korean": "도서관에서 공부합니다."
+            },
+            {
+              "japanese": "レストランで食べます。",
+              "reading": "レストランでたべます。",
+              "korean": "레스토랑에서 먹습니다."
+            }
+          ],
+          "vsNi": "に는 존재의 장소, で는 동작의 장소"
+        },
+        {
+          "usage": "수단/방법",
+          "description": "교통수단, 도구 등을 나타낸다",
+          "examples": [
+            {
+              "japanese": "電車で行きます。",
+              "reading": "でんしゃでいきます。",
+              "korean": "전철로 갑니다."
+            },
+            {
+              "japanese": "箸で食べます。",
+              "reading": "はしでたべます。",
+              "korean": "젓가락으로 먹습니다."
+            },
+            {
+              "japanese": "日本語で話してください。",
+              "reading": "にほんごではなしてください。",
+              "korean": "일본어로 말해 주세요."
+            }
+          ]
+        },
+        {
+          "usage": "원인/이유",
+          "description": "원인이나 이유를 나타낸다",
+          "examples": [
+            {
+              "japanese": "病気で休みました。",
+              "reading": "びょうきでやすみました。",
+              "korean": "병으로 쉬었습니다."
+            },
+            {
+              "japanese": "地震で電車が止まりました。",
+              "reading": "じしんででんしゃがとまりました。",
+              "korean": "지진으로 전철이 멈췄습니다."
+            }
+          ]
+        },
+        {
+          "usage": "범위/한도",
+          "description": "범위나 기준을 나타낸다",
+          "examples": [
+            {
+              "japanese": "3人で行きます。",
+              "reading": "さんにんでいきます。",
+              "korean": "3명이서 갑니다."
+            },
+            {
+              "japanese": "全部で1000円です。",
+              "reading": "ぜんぶでせんえんです。",
+              "korean": "전부 1000엔입니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "to",
+      "particle": "と",
+      "reading": "to",
+      "level": "N5",
+      "name": "병렬/동반 조사",
+      "mainUsage": "~와/과, ~랑",
+      "usages": [
+        {
+          "usage": "나열",
+          "description": "명사를 나열한다 (전부 나열)",
+          "examples": [
+            {
+              "japanese": "りんごとみかんを買いました。",
+              "reading": "りんごとみかんをかいました。",
+              "korean": "사과와 귤을 샀습니다."
+            }
+          ]
+        },
+        {
+          "usage": "동반",
+          "description": "함께 하는 상대를 나타낸다",
+          "examples": [
+            {
+              "japanese": "友達と映画を見ました。",
+              "reading": "ともだちとえいがをみました。",
+              "korean": "친구와 영화를 봤습니다."
+            },
+            {
+              "japanese": "彼と結婚しました。",
+              "reading": "かれとけっこんしました。",
+              "korean": "그와 결혼했습니다."
+            }
+          ]
+        },
+        {
+          "usage": "인용",
+          "description": "말이나 생각의 내용을 나타낸다",
+          "examples": [
+            {
+              "japanese": "「おはよう」と言いました。",
+              "reading": "「おはよう」といいました。",
+              "korean": "'안녕'이라고 말했습니다."
+            },
+            {
+              "japanese": "明日は雨だと思います。",
+              "reading": "あしたはあめだとおもいます。",
+              "korean": "내일은 비라고 생각합니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ya",
+      "particle": "や",
+      "reading": "ya",
+      "level": "N5",
+      "name": "예시 조사",
+      "mainUsage": "~나, ~등 (일부 예시)",
+      "usages": [
+        {
+          "usage": "예시 나열",
+          "description": "몇 가지 예를 든다 (전부가 아님)",
+          "examples": [
+            {
+              "japanese": "りんごやみかんを買いました。",
+              "reading": "りんごやみかんをかいました。",
+              "korean": "사과나 귤 등을 샀습니다."
+            },
+            {
+              "japanese": "東京や大阪に行きました。",
+              "reading": "とうきょうやおおさかにいきました。",
+              "korean": "도쿄나 오사카 등에 갔습니다."
+            }
+          ],
+          "vsTo": "と는 전부 나열, や는 일부 예시"
+        }
+      ]
+    },
+    {
+      "id": "mo",
+      "particle": "も",
+      "reading": "mo",
+      "level": "N5",
+      "name": "첨가 조사",
+      "mainUsage": "~도",
+      "usages": [
+        {
+          "usage": "첨가/포함",
+          "description": "다른 것과 마찬가지임을 나타낸다",
+          "examples": [
+            {
+              "japanese": "私も行きます。",
+              "reading": "わたしもいきます。",
+              "korean": "저도 갑니다."
+            },
+            {
+              "japanese": "これも美味しいです。",
+              "reading": "これもおいしいです。",
+              "korean": "이것도 맛있습니다."
+            }
+          ]
+        },
+        {
+          "usage": "강조 (의문사 + も + 부정)",
+          "description": "전면 부정을 나타낸다",
+          "examples": [
+            {
+              "japanese": "誰もいません。",
+              "reading": "だれもいません。",
+              "korean": "아무도 없습니다."
+            },
+            {
+              "japanese": "何も食べませんでした。",
+              "reading": "なにもたべませんでした。",
+              "korean": "아무것도 안 먹었습니다."
+            },
+            {
+              "japanese": "どこにも行きません。",
+              "reading": "どこにもいきません。",
+              "korean": "어디에도 안 갑니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ka",
+      "particle": "か",
+      "reading": "ka",
+      "level": "N5",
+      "name": "의문 조사",
+      "mainUsage": "의문문을 만듦",
+      "usages": [
+        {
+          "usage": "의문문",
+          "description": "문장 끝에 붙여 의문문을 만든다",
+          "examples": [
+            {
+              "japanese": "これは何ですか。",
+              "reading": "これはなんですか。",
+              "korean": "이것은 무엇입니까?"
+            },
+            {
+              "japanese": "行きますか。",
+              "reading": "いきますか。",
+              "korean": "갑니까?"
+            }
+          ]
+        },
+        {
+          "usage": "선택",
+          "description": "~인지 아닌지, 또는",
+          "examples": [
+            {
+              "japanese": "コーヒーか紅茶か、どちらがいいですか。",
+              "reading": "コーヒーかこうちゃか、どちらがいいですか。",
+              "korean": "커피나 홍차, 어느 쪽이 좋습니까?"
+            },
+            {
+              "japanese": "行くかどうかわかりません。",
+              "reading": "いくかどうかわかりません。",
+              "korean": "갈지 어떨지 모르겠습니다."
+            }
+          ]
+        },
+        {
+          "usage": "의문사 + か (불특정)",
+          "description": "불특정한 것을 나타낸다",
+          "examples": [
+            {
+              "japanese": "誰かいますか。",
+              "reading": "だれかいますか。",
+              "korean": "누군가 있습니까?"
+            },
+            {
+              "japanese": "何か食べましたか。",
+              "reading": "なにかたべましたか。",
+              "korean": "뭔가 먹었습니까?"
+            },
+            {
+              "japanese": "どこかに行きたいです。",
+              "reading": "どこかにいきたいです。",
+              "korean": "어딘가 가고 싶습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ne",
+      "particle": "ね",
+      "reading": "ne",
+      "level": "N5",
+      "name": "확인/동의 조사",
+      "mainUsage": "~네요, ~죠",
+      "usages": [
+        {
+          "usage": "확인/동의 구하기",
+          "description": "상대의 동의를 구하거나 확인할 때",
+          "examples": [
+            {
+              "japanese": "いい天気ですね。",
+              "reading": "いいてんきですね。",
+              "korean": "좋은 날씨네요."
+            },
+            {
+              "japanese": "美味しいですね。",
+              "reading": "おいしいですね。",
+              "korean": "맛있네요."
+            },
+            {
+              "japanese": "明日は日曜日ですね。",
+              "reading": "あしたはにちようびですね。",
+              "korean": "내일은 일요일이죠."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yo",
+      "particle": "よ",
+      "reading": "yo",
+      "level": "N5",
+      "name": "강조/전달 조사",
+      "mainUsage": "~요 (알려줌/강조)",
+      "usages": [
+        {
+          "usage": "정보 전달/강조",
+          "description": "상대가 모르는 정보를 알려줄 때",
+          "examples": [
+            {
+              "japanese": "これは美味しいですよ。",
+              "reading": "これはおいしいですよ。",
+              "korean": "이거 맛있어요."
+            },
+            {
+              "japanese": "電車が来ましたよ。",
+              "reading": "でんしゃがきましたよ。",
+              "korean": "전철이 왔어요."
+            },
+            {
+              "japanese": "危ないですよ！",
+              "reading": "あぶないですよ！",
+              "korean": "위험해요!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kara",
+      "particle": "から",
+      "reading": "kara",
+      "level": "N5",
+      "name": "기점/이유 조사",
+      "mainUsage": "~부터, ~니까",
+      "usages": [
+        {
+          "usage": "시작점 (시간/장소)",
+          "description": "시작하는 지점을 나타낸다",
+          "examples": [
+            {
+              "japanese": "9時から始まります。",
+              "reading": "くじからはじまります。",
+              "korean": "9시부터 시작합니다."
+            },
+            {
+              "japanese": "東京から来ました。",
+              "reading": "とうきょうからきました。",
+              "korean": "도쿄에서 왔습니다."
+            }
+          ]
+        },
+        {
+          "usage": "이유",
+          "description": "이유를 나타낸다 (~니까, ~때문에)",
+          "examples": [
+            {
+              "japanese": "暑いですから、窓を開けてください。",
+              "reading": "あついですから、まどをあけてください。",
+              "korean": "더우니까 창문을 열어주세요."
+            },
+            {
+              "japanese": "時間がないから、急ぎましょう。",
+              "reading": "じかんがないから、いそぎましょう。",
+              "korean": "시간이 없으니까 서두릅시다."
+            }
+          ]
+        },
+        {
+          "usage": "재료",
+          "description": "재료를 나타낸다 (~로 만들다)",
+          "examples": [
+            {
+              "japanese": "お酒は米から作ります。",
+              "reading": "おさけはこめからつくります。",
+              "korean": "술은 쌀로 만듭니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "made",
+      "particle": "まで",
+      "reading": "made",
+      "level": "N5",
+      "name": "종점 조사",
+      "mainUsage": "~까지",
+      "usages": [
+        {
+          "usage": "끝점 (시간/장소)",
+          "description": "끝나는 지점을 나타낸다",
+          "examples": [
+            {
+              "japanese": "5時まで働きます。",
+              "reading": "ごじまではたらきます。",
+              "korean": "5시까지 일합니다."
+            },
+            {
+              "japanese": "駅まで歩きました。",
+              "reading": "えきまであるきました。",
+              "korean": "역까지 걸었습니다."
+            },
+            {
+              "japanese": "9時から5時まで仕事です。",
+              "reading": "くじからごじまでしごとです。",
+              "korean": "9시부터 5시까지 일입니다."
+            }
+          ]
+        },
+        {
+          "usage": "정도/범위",
+          "description": "극단적인 예를 나타낸다 (~까지도)",
+          "examples": [
+            {
+              "japanese": "子供まで知っています。",
+              "reading": "こどもまでしっています。",
+              "korean": "아이까지도 알고 있습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "no",
+      "particle": "の",
+      "reading": "no",
+      "level": "N5",
+      "name": "소유/수식 조사",
+      "mainUsage": "~의",
+      "usages": [
+        {
+          "usage": "소유",
+          "description": "소유를 나타낸다",
+          "examples": [
+            {
+              "japanese": "私の本",
+              "reading": "わたしのほん",
+              "korean": "내 책"
+            },
+            {
+              "japanese": "友達の家",
+              "reading": "ともだちのいえ",
+              "korean": "친구의 집"
+            }
+          ]
+        },
+        {
+          "usage": "수식/관계",
+          "description": "명사와 명사의 관계를 나타낸다",
+          "examples": [
+            {
+              "japanese": "日本語の先生",
+              "reading": "にほんごのせんせい",
+              "korean": "일본어 선생님"
+            },
+            {
+              "japanese": "東京の地図",
+              "reading": "とうきょうのちず",
+              "korean": "도쿄의 지도"
+            }
+          ]
+        },
+        {
+          "usage": "명사화",
+          "description": "동사/형용사를 명사화",
+          "examples": [
+            {
+              "japanese": "食べるのが好きです。",
+              "reading": "たべるのがすきです。",
+              "korean": "먹는 것을 좋아합니다."
+            },
+            {
+              "japanese": "走るのは大変です。",
+              "reading": "はしるのはたいへんです。",
+              "korean": "뛰는 것은 힘듭니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "he",
+      "particle": "へ",
+      "reading": "e",
+      "level": "N5",
+      "name": "방향 조사",
+      "mainUsage": "~(으)로, ~쪽으로",
+      "usages": [
+        {
+          "usage": "방향/목적지",
+          "description": "향하는 방향을 나타낸다 (に와 비슷하지만 방향성 강조)",
+          "examples": [
+            {
+              "japanese": "学校へ行きます。",
+              "reading": "がっこうへいきます。",
+              "korean": "학교로 갑니다."
+            },
+            {
+              "japanese": "北へ向かいます。",
+              "reading": "きたへむかいます。",
+              "korean": "북쪽으로 향합니다."
+            }
+          ],
+          "vsNi": "へ는 방향성 강조, に는 도착점 강조. 일상에서는 거의 교환 가능"
+        }
+      ]
+    }
+  ]
+}

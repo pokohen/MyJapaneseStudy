@@ -48,7 +48,7 @@ export const hiragana = [
   { char: "ん", romaji: "n", hangeul: "응" },
 ];
 
-// 카타카나 데이터
+// 가타카나 데이터
 export const katakana = [
   { char: "ア", romaji: "a", hangeul: "아" },
   { char: "イ", romaji: "i", hangeul: "이" },

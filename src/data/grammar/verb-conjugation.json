@@ -1,0 +1,893 @@
+{
+  "id": "verb-conjugation",
+  "title": "동사 활용",
+  "description": "일본어 동사의 기본 활용형",
+  "verbGroups": {
+    "group1": {
+      "name": "1그룹 (5단동사/う동사)",
+      "description": "어미가 う단으로 끝나는 동사 (る로 끝나도 る 앞이 あ/う/お단이면 1그룹)",
+      "examples": ["書く", "読む", "話す", "買う", "待つ", "死ぬ", "遊ぶ", "作る", "泳ぐ"]
+    },
+    "group2": {
+      "name": "2그룹 (1단동사/る동사)",
+      "description": "る로 끝나고, る 앞이 い단 또는 え단인 동사",
+      "examples": ["食べる", "見る", "起きる", "寝る", "教える", "開ける"]
+    },
+    "group3": {
+      "name": "3그룹 (불규칙동사)",
+      "description": "する와 来る 두 개뿐",
+      "examples": ["する", "来る"]
+    }
+  },
+  "conjugations": [
+    {
+      "id": "masu-form",
+      "name": "ます형",
+      "level": "N5",
+      "usage": "정중한 표현 (です/ます체)",
+      "rules": [
+        {
+          "group": "1그룹",
+          "rule": "う단 → い단 + ます",
+          "detail": "어미의 う단을 い단으로 바꾸고 ます를 붙인다"
+        },
+        {
+          "group": "2그룹",
+          "rule": "る → ます",
+          "detail": "る를 떼고 ます를 붙인다"
+        },
+        {
+          "group": "3그룹",
+          "rule": "불규칙",
+          "detail": "する→します, 来る→来ます"
+        }
+      ],
+      "examples": [
+        {
+          "dictionary": "書く",
+          "conjugated": "書きます",
+          "negative": "書きません",
+          "past": "書きました",
+          "pastNegative": "書きませんでした",
+          "reading": "かく → かきます",
+          "meaning": "쓰다",
+          "group": 1
+        },
+        {
+          "dictionary": "読む",
+          "conjugated": "読みます",
+          "negative": "読みません",
+          "past": "読みました",
+          "pastNegative": "読みませんでした",
+          "reading": "よむ → よみます",
+          "meaning": "읽다",
+          "group": 1
+        },
+        {
+          "dictionary": "話す",
+          "conjugated": "話します",
+          "negative": "話しません",
+          "past": "話しました",
+          "pastNegative": "話しませんでした",
+          "reading": "はなす → はなします",
+          "meaning": "말하다",
+          "group": 1
+        },
+        {
+          "dictionary": "買う",
+          "conjugated": "買います",
+          "negative": "買いません",
+          "past": "買いました",
+          "pastNegative": "買いませんでした",
+          "reading": "かう → かいます",
+          "meaning": "사다",
+          "group": 1
+        },
+        {
+          "dictionary": "待つ",
+          "conjugated": "待ちます",
+          "negative": "待ちません",
+          "past": "待ちました",
+          "pastNegative": "待ちませんでした",
+          "reading": "まつ → まちます",
+          "meaning": "기다리다",
+          "group": 1
+        },
+        {
+          "dictionary": "食べる",
+          "conjugated": "食べます",
+          "negative": "食べません",
+          "past": "食べました",
+          "pastNegative": "食べませんでした",
+          "reading": "たべる → たべます",
+          "meaning": "먹다",
+          "group": 2
+        },
+        {
+          "dictionary": "見る",
+          "conjugated": "見ます",
+          "negative": "見ません",
+          "past": "見ました",
+          "pastNegative": "見ませんでした",
+          "reading": "みる → みます",
+          "meaning": "보다",
+          "group": 2
+        },
+        {
+          "dictionary": "起きる",
+          "conjugated": "起きます",
+          "negative": "起きません",
+          "past": "起きました",
+          "pastNegative": "起きませんでした",
+          "reading": "おきる → おきます",
+          "meaning": "일어나다",
+          "group": 2
+        },
+        {
+          "dictionary": "する",
+          "conjugated": "します",
+          "negative": "しません",
+          "past": "しました",
+          "pastNegative": "しませんでした",
+          "reading": "する → します",
+          "meaning": "하다",
+          "group": 3
+        },
+        {
+          "dictionary": "来る",
+          "conjugated": "来ます",
+          "negative": "来ません",
+          "past": "来ました",
+          "pastNegative": "来ませんでした",
+          "reading": "くる → きます",
+          "meaning": "오다",
+          "group": 3
+        }
+      ]
+    },
+    {
+      "id": "te-form",
+      "name": "て형",
+      "level": "N5",
+      "usage": "연결, 부탁(~てください), 진행(~ている), 허가(~てもいい) 등",
+      "rules": [
+        {
+          "group": "1그룹",
+          "rule": "음편 변화",
+          "detail": "어미에 따라 다름: く→いて, ぐ→いで, す→して, む/ぶ/ぬ→んで, つ/う/る→って"
+        },
+        {
+          "group": "2그룹",
+          "rule": "る → て",
+          "detail": "る를 떼고 て를 붙인다"
+        },
+        {
+          "group": "3그룹",
+          "rule": "불규칙",
+          "detail": "する→して, 来る→来て"
+        }
+      ],
+      "soundChanges": [
+        { "ending": "く", "change": "いて", "example": "書く → 書いて", "exception": "行く → 行って" },
+        { "ending": "ぐ", "change": "いで", "example": "泳ぐ → 泳いで" },
+        { "ending": "す", "change": "して", "example": "話す → 話して" },
+        { "ending": "む", "change": "んで", "example": "読む → 読んで" },
+        { "ending": "ぶ", "change": "んで", "example": "遊ぶ → 遊んで" },
+        { "ending": "ぬ", "change": "んで", "example": "死ぬ → 死んで" },
+        { "ending": "つ", "change": "って", "example": "待つ → 待って" },
+        { "ending": "う", "change": "って", "example": "買う → 買って" },
+        { "ending": "る (1그룹)", "change": "って", "example": "作る → 作って" }
+      ],
+      "examples": [
+        {
+          "dictionary": "書く",
+          "conjugated": "書いて",
+          "reading": "かく → かいて",
+          "meaning": "쓰다",
+          "group": 1
+        },
+        {
+          "dictionary": "泳ぐ",
+          "conjugated": "泳いで",
+          "reading": "およぐ → およいで",
+          "meaning": "수영하다",
+          "group": 1
+        },
+        {
+          "dictionary": "話す",
+          "conjugated": "話して",
+          "reading": "はなす → はなして",
+          "meaning": "말하다",
+          "group": 1
+        },
+        {
+          "dictionary": "読む",
+          "conjugated": "読んで",
+          "reading": "よむ → よんで",
+          "meaning": "읽다",
+          "group": 1
+        },
+        {
+          "dictionary": "遊ぶ",
+          "conjugated": "遊んで",
+          "reading": "あそぶ → あそんで",
+          "meaning": "놀다",
+          "group": 1
+        },
+        {
+          "dictionary": "待つ",
+          "conjugated": "待って",
+          "reading": "まつ → まって",
+          "meaning": "기다리다",
+          "group": 1
+        },
+        {
+          "dictionary": "買う",
+          "conjugated": "買って",
+          "reading": "かう → かって",
+          "meaning": "사다",
+          "group": 1
+        },
+        {
+          "dictionary": "行く",
+          "conjugated": "行って",
+          "reading": "いく → いって",
+          "meaning": "가다",
+          "group": 1,
+          "note": "예외: いて가 아니라 いって"
+        },
+        {
+          "dictionary": "食べる",
+          "conjugated": "食べて",
+          "reading": "たべる → たべて",
+          "meaning": "먹다",
+          "group": 2
+        },
+        {
+          "dictionary": "見る",
+          "conjugated": "見て",
+          "reading": "みる → みて",
+          "meaning": "보다",
+          "group": 2
+        },
+        {
+          "dictionary": "する",
+          "conjugated": "して",
+          "reading": "する → して",
+          "meaning": "하다",
+          "group": 3
+        },
+        {
+          "dictionary": "来る",
+          "conjugated": "来て",
+          "reading": "くる → きて",
+          "meaning": "오다",
+          "group": 3
+        }
+      ]
+    },
+    {
+      "id": "ta-form",
+      "name": "た형",
+      "level": "N5",
+      "usage": "과거형, 경험(~たことがある), 완료",
+      "rules": [
+        {
+          "group": "1그룹",
+          "rule": "て형과 같은 음편 + た/だ",
+          "detail": "て→た, で→だ로 바꾸면 됨"
+        },
+        {
+          "group": "2그룹",
+          "rule": "る → た",
+          "detail": "る를 떼고 た를 붙인다"
+        },
+        {
+          "group": "3그룹",
+          "rule": "불규칙",
+          "detail": "する→した, 来る→来た"
+        }
+      ],
+      "examples": [
+        {
+          "dictionary": "書く",
+          "conjugated": "書いた",
+          "reading": "かく → かいた",
+          "meaning": "쓰다",
+          "group": 1
+        },
+        {
+          "dictionary": "泳ぐ",
+          "conjugated": "泳いだ",
+          "reading": "およぐ → およいだ",
+          "meaning": "수영하다",
+          "group": 1
+        },
+        {
+          "dictionary": "読む",
+          "conjugated": "読んだ",
+          "reading": "よむ → よんだ",
+          "meaning": "읽다",
+          "group": 1
+        },
+        {
+          "dictionary": "待つ",
+          "conjugated": "待った",
+          "reading": "まつ → まった",
+          "meaning": "기다리다",
+          "group": 1
+        },
+        {
+          "dictionary": "食べる",
+          "conjugated": "食べた",
+          "reading": "たべる → たべた",
+          "meaning": "먹다",
+          "group": 2
+        },
+        {
+          "dictionary": "する",
+          "conjugated": "した",
+          "reading": "する → した",
+          "meaning": "하다",
+          "group": 3
+        },
+        {
+          "dictionary": "来る",
+          "conjugated": "来た",
+          "reading": "くる → きた",
+          "meaning": "오다",
+          "group": 3
+        }
+      ]
+    },
+    {
+      "id": "nai-form",
+      "name": "ない형",
+      "level": "N5",
+      "usage": "부정형 (반말), ~なければならない, ~ないでください 등",
+      "rules": [
+        {
+          "group": "1그룹",
+          "rule": "う단 → あ단 + ない",
+          "detail": "어미의 う단을 あ단으로 바꾸고 ない를 붙인다 (う→わない)"
+        },
+        {
+          "group": "2그룹",
+          "rule": "る → ない",
+          "detail": "る를 떼고 ない를 붙인다"
+        },
+        {
+          "group": "3그룹",
+          "rule": "불규칙",
+          "detail": "する→しない, 来る→来ない"
+        }
+      ],
+      "examples": [
+        {
+          "dictionary": "書く",
+          "conjugated": "書かない",
+          "reading": "かく → かかない",
+          "meaning": "쓰다",
+          "group": 1
+        },
+        {
+          "dictionary": "読む",
+          "conjugated": "読まない",
+          "reading": "よむ → よまない",
+          "meaning": "읽다",
+          "group": 1
+        },
+        {
+          "dictionary": "話す",
+          "conjugated": "話さない",
+          "reading": "はなす → はなさない",
+          "meaning": "말하다",
+          "group": 1
+        },
+        {
+          "dictionary": "買う",
+          "conjugated": "買わない",
+          "reading": "かう → かわない",
+          "meaning": "사다",
+          "group": 1,
+          "note": "う→わない (あない가 아님)"
+        },
+        {
+          "dictionary": "待つ",
+          "conjugated": "待たない",
+          "reading": "まつ → またない",
+          "meaning": "기다리다",
+          "group": 1
+        },
+        {
+          "dictionary": "食べる",
+          "conjugated": "食べない",
+          "reading": "たべる → たべない",
+          "meaning": "먹다",
+          "group": 2
+        },
+        {
+          "dictionary": "見る",
+          "conjugated": "見ない",
+          "reading": "みる → みない",
+          "meaning": "보다",
+          "group": 2
+        },
+        {
+          "dictionary": "する",
+          "conjugated": "しない",
+          "reading": "する → しない",
+          "meaning": "하다",
+          "group": 3
+        },
+        {
+          "dictionary": "来る",
+          "conjugated": "来ない",
+          "reading": "くる → こない",
+          "meaning": "오다",
+          "group": 3
+        },
+        {
+          "dictionary": "ある",
+          "conjugated": "ない",
+          "reading": "ある → ない",
+          "meaning": "있다 (사물)",
+          "group": 1,
+          "note": "특수: あらない가 아니라 ない"
+        }
+      ]
+    },
+    {
+      "id": "potential-form",
+      "name": "가능형",
+      "level": "N4",
+      "usage": "~할 수 있다",
+      "rules": [
+        {
+          "group": "1그룹",
+          "rule": "う단 → え단 + る",
+          "detail": "어미의 う단을 え단으로 바꾸고 る를 붙인다"
+        },
+        {
+          "group": "2그룹",
+          "rule": "る → られる",
+          "detail": "る를 떼고 られる를 붙인다 (구어에서는 れる로 줄여씀)"
+        },
+        {
+          "group": "3그룹",
+          "rule": "불규칙",
+          "detail": "する→できる, 来る→来られる"
+        }
+      ],
+      "examples": [
+        {
+          "dictionary": "書く",
+          "conjugated": "書ける",
+          "reading": "かく → かける",
+          "meaning": "쓸 수 있다",
+          "group": 1
+        },
+        {
+          "dictionary": "読む",
+          "conjugated": "読める",
+          "reading": "よむ → よめる",
+          "meaning": "읽을 수 있다",
+          "group": 1
+        },
+        {
+          "dictionary": "話す",
+          "conjugated": "話せる",
+          "reading": "はなす → はなせる",
+          "meaning": "말할 수 있다",
+          "group": 1
+        },
+        {
+          "dictionary": "泳ぐ",
+          "conjugated": "泳げる",
+          "reading": "およぐ → およげる",
+          "meaning": "수영할 수 있다",
+          "group": 1
+        },
+        {
+          "dictionary": "食べる",
+          "conjugated": "食べられる",
+          "reading": "たべる → たべられる",
+          "meaning": "먹을 수 있다",
+          "group": 2,
+          "note": "구어: 食べれる"
+        },
+        {
+          "dictionary": "見る",
+          "conjugated": "見られる",
+          "reading": "みる → みられる",
+          "meaning": "볼 수 있다",
+          "group": 2,
+          "note": "구어: 見れる"
+        },
+        {
+          "dictionary": "する",
+          "conjugated": "できる",
+          "reading": "する → できる",
+          "meaning": "할 수 있다",
+          "group": 3
+        },
+        {
+          "dictionary": "来る",
+          "conjugated": "来られる",
+          "reading": "くる → こられる",
+          "meaning": "올 수 있다",
+          "group": 3,
+          "note": "구어: 来れる"
+        }
+      ]
+    },
+    {
+      "id": "volitional-form",
+      "name": "의지형",
+      "level": "N4",
+      "usage": "~하자, ~하려고 (의지/권유)",
+      "rules": [
+        {
+          "group": "1그룹",
+          "rule": "う단 → お단 + う",
+          "detail": "어미의 う단을 お단으로 바꾸고 う를 붙인다"
+        },
+        {
+          "group": "2그룹",
+          "rule": "る → よう",
+          "detail": "る를 떼고 よう를 붙인다"
+        },
+        {
+          "group": "3그룹",
+          "rule": "불규칙",
+          "detail": "する→しよう, 来る→来よう"
+        }
+      ],
+      "examples": [
+        {
+          "dictionary": "書く",
+          "conjugated": "書こう",
+          "reading": "かく → かこう",
+          "meaning": "쓰자",
+          "group": 1
+        },
+        {
+          "dictionary": "読む",
+          "conjugated": "読もう",
+          "reading": "よむ → よもう",
+          "meaning": "읽자",
+          "group": 1
+        },
+        {
+          "dictionary": "行く",
+          "conjugated": "行こう",
+          "reading": "いく → いこう",
+          "meaning": "가자",
+          "group": 1
+        },
+        {
+          "dictionary": "食べる",
+          "conjugated": "食べよう",
+          "reading": "たべる → たべよう",
+          "meaning": "먹자",
+          "group": 2
+        },
+        {
+          "dictionary": "見る",
+          "conjugated": "見よう",
+          "reading": "みる → みよう",
+          "meaning": "보자",
+          "group": 2
+        },
+        {
+          "dictionary": "する",
+          "conjugated": "しよう",
+          "reading": "する → しよう",
+          "meaning": "하자",
+          "group": 3
+        },
+        {
+          "dictionary": "来る",
+          "conjugated": "来よう",
+          "reading": "くる → こよう",
+          "meaning": "오자",
+          "group": 3
+        }
+      ]
+    },
+    {
+      "id": "conditional-ba-form",
+      "name": "ば형 (가정형)",
+      "level": "N4",
+      "usage": "~하면 (가정 조건)",
+      "rules": [
+        {
+          "group": "1그룹",
+          "rule": "う단 → え단 + ば",
+          "detail": "어미의 う단을 え단으로 바꾸고 ば를 붙인다"
+        },
+        {
+          "group": "2그룹",
+          "rule": "る → れば",
+          "detail": "る를 떼고 れば를 붙인다"
+        },
+        {
+          "group": "3그룹",
+          "rule": "불규칙",
+          "detail": "する→すれば, 来る→来れば"
+        }
+      ],
+      "examples": [
+        {
+          "dictionary": "書く",
+          "conjugated": "書けば",
+          "reading": "かく → かけば",
+          "meaning": "쓰면",
+          "group": 1
+        },
+        {
+          "dictionary": "読む",
+          "conjugated": "読めば",
+          "reading": "よむ → よめば",
+          "meaning": "읽으면",
+          "group": 1
+        },
+        {
+          "dictionary": "行く",
+          "conjugated": "行けば",
+          "reading": "いく → いけば",
+          "meaning": "가면",
+          "group": 1
+        },
+        {
+          "dictionary": "食べる",
+          "conjugated": "食べれば",
+          "reading": "たべる → たべれば",
+          "meaning": "먹으면",
+          "group": 2
+        },
+        {
+          "dictionary": "する",
+          "conjugated": "すれば",
+          "reading": "する → すれば",
+          "meaning": "하면",
+          "group": 3
+        },
+        {
+          "dictionary": "来る",
+          "conjugated": "来れば",
+          "reading": "くる → くれば",
+          "meaning": "오면",
+          "group": 3
+        }
+      ]
+    },
+    {
+      "id": "conditional-tara-form",
+      "name": "たら형",
+      "level": "N4",
+      "usage": "~했더니, ~하면 (조건/가정)",
+      "rules": [
+        {
+          "group": "전체",
+          "rule": "た형 + ら",
+          "detail": "た형에 ら를 붙이면 된다"
+        }
+      ],
+      "examples": [
+        {
+          "dictionary": "書く",
+          "conjugated": "書いたら",
+          "reading": "かく → かいたら",
+          "meaning": "쓰면/썼더니",
+          "group": 1
+        },
+        {
+          "dictionary": "読む",
+          "conjugated": "読んだら",
+          "reading": "よむ → よんだら",
+          "meaning": "읽으면/읽었더니",
+          "group": 1
+        },
+        {
+          "dictionary": "食べる",
+          "conjugated": "食べたら",
+          "reading": "たべる → たべたら",
+          "meaning": "먹으면/먹었더니",
+          "group": 2
+        },
+        {
+          "dictionary": "する",
+          "conjugated": "したら",
+          "reading": "する → したら",
+          "meaning": "하면/했더니",
+          "group": 3
+        },
+        {
+          "dictionary": "来る",
+          "conjugated": "来たら",
+          "reading": "くる → きたら",
+          "meaning": "오면/왔더니",
+          "group": 3
+        }
+      ]
+    },
+    {
+      "id": "passive-form",
+      "name": "수동형",
+      "level": "N4",
+      "usage": "~당하다, ~되다 (피해/영향의 수동)",
+      "rules": [
+        {
+          "group": "1그룹",
+          "rule": "う단 → あ단 + れる",
+          "detail": "어미의 う단을 あ단으로 바꾸고 れる를 붙인다"
+        },
+        {
+          "group": "2그룹",
+          "rule": "る → られる",
+          "detail": "る를 떼고 られる를 붙인다"
+        },
+        {
+          "group": "3그룹",
+          "rule": "불규칙",
+          "detail": "する→される, 来る→来られる"
+        }
+      ],
+      "examples": [
+        {
+          "dictionary": "書く",
+          "conjugated": "書かれる",
+          "reading": "かく → かかれる",
+          "meaning": "쓰이다",
+          "group": 1
+        },
+        {
+          "dictionary": "読む",
+          "conjugated": "読まれる",
+          "reading": "よむ → よまれる",
+          "meaning": "읽히다",
+          "group": 1
+        },
+        {
+          "dictionary": "叱る",
+          "conjugated": "叱られる",
+          "reading": "しかる → しかられる",
+          "meaning": "혼나다",
+          "group": 1
+        },
+        {
+          "dictionary": "食べる",
+          "conjugated": "食べられる",
+          "reading": "たべる → たべられる",
+          "meaning": "먹히다",
+          "group": 2
+        },
+        {
+          "dictionary": "見る",
+          "conjugated": "見られる",
+          "reading": "みる → みられる",
+          "meaning": "보이다 (남에게)",
+          "group": 2
+        },
+        {
+          "dictionary": "する",
+          "conjugated": "される",
+          "reading": "する → される",
+          "meaning": "당하다",
+          "group": 3
+        },
+        {
+          "dictionary": "来る",
+          "conjugated": "来られる",
+          "reading": "くる → こられる",
+          "meaning": "(누가) 와버리다",
+          "group": 3
+        }
+      ],
+      "usageExamples": [
+        {
+          "japanese": "先生に叱られた。",
+          "reading": "せんせいにしかられた。",
+          "korean": "선생님께 혼났다."
+        },
+        {
+          "japanese": "電車で足を踏まれた。",
+          "reading": "でんしゃであしをふまれた。",
+          "korean": "전철에서 발을 밟혔다."
+        },
+        {
+          "japanese": "雨に降られた。",
+          "reading": "あめにふられた。",
+          "korean": "비를 맞았다. (피해의 수동)"
+        }
+      ]
+    },
+    {
+      "id": "causative-form",
+      "name": "사역형",
+      "level": "N4",
+      "usage": "~시키다, ~하게 하다",
+      "rules": [
+        {
+          "group": "1그룹",
+          "rule": "う단 → あ단 + せる",
+          "detail": "어미의 う단을 あ단으로 바꾸고 せる를 붙인다"
+        },
+        {
+          "group": "2그룹",
+          "rule": "る → させる",
+          "detail": "る를 떼고 させる를 붙인다"
+        },
+        {
+          "group": "3그룹",
+          "rule": "불규칙",
+          "detail": "する→させる, 来る→来させる"
+        }
+      ],
+      "examples": [
+        {
+          "dictionary": "書く",
+          "conjugated": "書かせる",
+          "reading": "かく → かかせる",
+          "meaning": "쓰게 하다",
+          "group": 1
+        },
+        {
+          "dictionary": "読む",
+          "conjugated": "読ませる",
+          "reading": "よむ → よませる",
+          "meaning": "읽게 하다",
+          "group": 1
+        },
+        {
+          "dictionary": "行く",
+          "conjugated": "行かせる",
+          "reading": "いく → いかせる",
+          "meaning": "가게 하다",
+          "group": 1
+        },
+        {
+          "dictionary": "食べる",
+          "conjugated": "食べさせる",
+          "reading": "たべる → たべさせる",
+          "meaning": "먹게 하다",
+          "group": 2
+        },
+        {
+          "dictionary": "見る",
+          "conjugated": "見させる",
+          "reading": "みる → みさせる",
+          "meaning": "보게 하다",
+          "group": 2
+        },
+        {
+          "dictionary": "する",
+          "conjugated": "させる",
+          "reading": "する → させる",
+          "meaning": "시키다",
+          "group": 3
+        },
+        {
+          "dictionary": "来る",
+          "conjugated": "来させる",
+          "reading": "くる → こさせる",
+          "meaning": "오게 하다",
+          "group": 3
+        }
+      ],
+      "usageExamples": [
+        {
+          "japanese": "子供に野菜を食べさせる。",
+          "reading": "こどもにやさいをたべさせる。",
+          "korean": "아이에게 채소를 먹게 하다."
+        },
+        {
+          "japanese": "部下に報告書を書かせた。",
+          "reading": "ぶかにほうこくしょをかかせた。",
+          "korean": "부하에게 보고서를 쓰게 했다."
+        }
+      ]
+    }
+  ]
+}
