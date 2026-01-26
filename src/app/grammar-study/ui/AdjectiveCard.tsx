@@ -1,8 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import { Button } from '@/components/Button'
 import type { AdjectiveType, ComparisonForm } from '@/data/grammar'
+import SpeakerButton from './SpeakerButton'
 
 interface AdjectiveCardProps {
   adjectiveType: AdjectiveType
@@ -16,48 +16,12 @@ interface AdjectiveCardProps {
 
 export default function AdjectiveCard({
   adjectiveType,
-  comparisonTable,
   isExpanded,
   onToggle,
 }: AdjectiveCardProps) {
-  const [isSpeaking, setIsSpeaking] = useState(false)
   const [showAllWords, setShowAllWords] = useState(false)
 
-  const speakJapanese = async (text: string) => {
-    if (isSpeaking) return
-
-    setIsSpeaking(true)
-    try {
-      const response = await fetch('/api/tts', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ text }),
-      })
-
-      if (!response.ok) {
-        throw new Error('TTS failed')
-      }
-
-      const { audio } = await response.json()
-      const audioData = `data:audio/mp3;base64,${audio}`
-      const audioElement = new Audio(audioData)
-      audioElement.play()
-    } catch (error) {
-      console.error('TTS error:', error)
-      if ('speechSynthesis' in window) {
-        window.speechSynthesis.cancel()
-        const utterance = new SpeechSynthesisUtterance(text)
-        utterance.lang = 'ja-JP'
-        utterance.rate = 0.8
-        window.speechSynthesis.speak(utterance)
-      }
-    } finally {
-      setIsSpeaking(false)
-    }
-  }
-
   const isIAdjective = adjectiveType.id === 'i-adjective'
-  const cardColor = isIAdjective ? 'pink' : 'teal'
 
   const displayedWords = showAllWords
     ? adjectiveType.commonWords
@@ -112,16 +76,11 @@ export default function AdjectiveCard({
                             <span className="text-black dark:text-white">
                               {conj.example.conjugated || conj.example.casual || conj.example.word}
                             </span>
-                            <Button
-                              onClick={(e) => {
-                                e.stopPropagation()
-                                speakJapanese(conj.example.conjugated || conj.example.casual || conj.example.word)
-                              }}
-                              className="p-1 bg-blue-100 dark:bg-blue-900 hover:bg-blue-200 dark:hover:bg-blue-800 rounded-full transition-colors"
-                              disabled={isSpeaking}
-                            >
-                              <span className="text-xs">🔊</span>
-                            </Button>
+                            <SpeakerButton
+                              text={conj.example.conjugated || conj.example.casual || conj.example.word}
+                              className="p-1 bg-zinc-200 dark:bg-zinc-700 hover:bg-zinc-300 dark:hover:bg-zinc-600 rounded-full transition-colors text-zinc-600 dark:text-zinc-400"
+                              iconClassName="w-4 h-4"
+                            />
                           </div>
                           <span className="text-xs text-zinc-500">{conj.example.meaning}</span>
                         </td>
@@ -166,7 +125,7 @@ export default function AdjectiveCard({
             {adjectiveType.lookAlikeIAdjectives && (
               <div className="bg-red-50 dark:bg-red-900/30 p-3 rounded-lg">
                 <p className="text-red-600 dark:text-red-400 font-medium mb-2">
-                  ⚠️ {adjectiveType.lookAlikeIAdjectives.description}
+                  {adjectiveType.lookAlikeIAdjectives.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {adjectiveType.lookAlikeIAdjectives.words.map((word, idx) => (
@@ -214,16 +173,11 @@ export default function AdjectiveCard({
                         </p>
                       )}
                     </div>
-                    <Button
-                      onClick={(e) => {
-                        e.stopPropagation()
-                        speakJapanese(word.word)
-                      }}
-                      className="p-1.5 bg-blue-100 dark:bg-blue-900 hover:bg-blue-200 dark:hover:bg-blue-800 rounded-full transition-colors flex-shrink-0"
-                      disabled={isSpeaking}
-                    >
-                      <span className="text-sm">🔊</span>
-                    </Button>
+                    <SpeakerButton
+                      text={word.word}
+                      className="p-1.5 bg-zinc-200 dark:bg-zinc-700 hover:bg-zinc-300 dark:hover:bg-zinc-600 rounded-full transition-colors flex-shrink-0 text-zinc-600 dark:text-zinc-400"
+                      iconClassName="w-4 h-4"
+                    />
                   </div>
                 ))}
               </div>

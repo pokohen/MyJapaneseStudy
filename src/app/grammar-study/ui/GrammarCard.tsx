@@ -1,8 +1,7 @@
 'use client'
 
-import { useState } from 'react'
-import { Button } from '@/components/Button'
 import type { GrammarPattern, GrammarExample, ConjugationItem } from '@/data/grammar'
+import SpeakerButton from './SpeakerButton'
 
 // 활용형 텍스트 변환 헬퍼
 function formatConjugation(item: string | ConjugationItem): string {
@@ -16,11 +15,7 @@ interface GrammarCardProps {
   onToggle: () => void
 }
 
-function ExampleItem({ example, onSpeak, isSpeaking }: {
-  example: GrammarExample
-  onSpeak: (text: string) => void
-  isSpeaking: boolean
-}) {
+function ExampleItem({ example }: { example: GrammarExample }) {
   return (
     <div className="bg-zinc-50 dark:bg-zinc-800 p-3 rounded-lg">
       <div className="flex items-start justify-between gap-2">
@@ -29,57 +24,17 @@ function ExampleItem({ example, onSpeak, isSpeaking }: {
           <p className="text-sm text-zinc-500 dark:text-zinc-400">{example.reading}</p>
           <p className="text-sm text-blue-600 dark:text-blue-400 mt-1">{example.korean}</p>
         </div>
-        <Button
-          onClick={(e) => {
-            e.stopPropagation()
-            onSpeak(example.japanese)
-          }}
-          className="p-2 bg-blue-100 dark:bg-blue-900 hover:bg-blue-200 dark:hover:bg-blue-800 rounded-full transition-colors flex-shrink-0"
-          disabled={isSpeaking}
-        >
-          <span className="text-lg">🔊</span>
-        </Button>
+        <SpeakerButton
+          text={example.japanese}
+          className="p-2 bg-zinc-200 dark:bg-zinc-700 hover:bg-zinc-300 dark:hover:bg-zinc-600 rounded-full transition-colors flex-shrink-0 text-zinc-600 dark:text-zinc-400"
+          iconClassName="w-5 h-5"
+        />
       </div>
     </div>
   )
 }
 
 export default function GrammarCard({ pattern, isExpanded, onToggle }: GrammarCardProps) {
-  const [isSpeaking, setIsSpeaking] = useState(false)
-
-  const speakJapanese = async (text: string) => {
-    if (isSpeaking) return
-
-    setIsSpeaking(true)
-    try {
-      const response = await fetch('/api/tts', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ text }),
-      })
-
-      if (!response.ok) {
-        throw new Error('TTS failed')
-      }
-
-      const { audio } = await response.json()
-      const audioData = `data:audio/mp3;base64,${audio}`
-      const audioElement = new Audio(audioData)
-      audioElement.play()
-    } catch (error) {
-      console.error('TTS error:', error)
-      if ('speechSynthesis' in window) {
-        window.speechSynthesis.cancel()
-        const utterance = new SpeechSynthesisUtterance(text)
-        utterance.lang = 'ja-JP'
-        utterance.rate = 0.8
-        window.speechSynthesis.speak(utterance)
-      }
-    } finally {
-      setIsSpeaking(false)
-    }
-  }
-
   return (
     <div className="bg-white dark:bg-zinc-900 rounded-lg shadow-md overflow-hidden">
       <button
@@ -165,19 +120,11 @@ export default function GrammarCard({ pattern, isExpanded, onToggle }: GrammarCa
                       </p>
                     )}
                     {usage.example && (
-                      <ExampleItem
-                        example={usage.example}
-                        onSpeak={speakJapanese}
-                        isSpeaking={isSpeaking}
-                      />
+                      <ExampleItem example={usage.example} />
                     )}
                     {usage.examples && usage.examples.map((ex, exIdx) => (
                       <div key={exIdx} className="mt-2">
-                        <ExampleItem
-                          example={ex}
-                          onSpeak={speakJapanese}
-                          isSpeaking={isSpeaking}
-                        />
+                        <ExampleItem example={ex} />
                       </div>
                     ))}
                   </div>
@@ -190,12 +137,7 @@ export default function GrammarCard({ pattern, isExpanded, onToggle }: GrammarCa
               <div className="space-y-2">
                 <p className="text-zinc-500 dark:text-zinc-400 text-xs">예문</p>
                 {pattern.examples.map((example, idx) => (
-                  <ExampleItem
-                    key={idx}
-                    example={example}
-                    onSpeak={speakJapanese}
-                    isSpeaking={isSpeaking}
-                  />
+                  <ExampleItem key={idx} example={example} />
                 ))}
               </div>
             )}

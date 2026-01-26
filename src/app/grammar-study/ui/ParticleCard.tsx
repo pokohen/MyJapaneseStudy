@@ -1,8 +1,7 @@
 'use client'
 
-import { useState } from 'react'
-import { Button } from '@/components/Button'
 import type { Particle, GrammarExample } from '@/data/grammar'
+import SpeakerButton from './SpeakerButton'
 
 interface ParticleCardProps {
   particle: Particle
@@ -10,11 +9,7 @@ interface ParticleCardProps {
   onToggle: () => void
 }
 
-function ExampleItem({ example, onSpeak, isSpeaking }: {
-  example: GrammarExample
-  onSpeak: (text: string) => void
-  isSpeaking: boolean
-}) {
+function ExampleItem({ example }: { example: GrammarExample }) {
   return (
     <div className="bg-zinc-50 dark:bg-zinc-800/50 p-2 rounded-lg">
       <div className="flex items-start justify-between gap-2">
@@ -23,57 +18,17 @@ function ExampleItem({ example, onSpeak, isSpeaking }: {
           <p className="text-xs text-zinc-500 dark:text-zinc-400">{example.reading}</p>
           <p className="text-xs text-blue-600 dark:text-blue-400 mt-0.5">{example.korean}</p>
         </div>
-        <Button
-          onClick={(e) => {
-            e.stopPropagation()
-            onSpeak(example.japanese)
-          }}
-          className="p-1.5 bg-blue-100 dark:bg-blue-900 hover:bg-blue-200 dark:hover:bg-blue-800 rounded-full transition-colors flex-shrink-0"
-          disabled={isSpeaking}
-        >
-          <span className="text-sm">🔊</span>
-        </Button>
+        <SpeakerButton
+          text={example.japanese}
+          className="p-1.5 bg-zinc-200 dark:bg-zinc-700 hover:bg-zinc-300 dark:hover:bg-zinc-600 rounded-full transition-colors flex-shrink-0 text-zinc-600 dark:text-zinc-400"
+          iconClassName="w-4 h-4"
+        />
       </div>
     </div>
   )
 }
 
 export default function ParticleCard({ particle, isExpanded, onToggle }: ParticleCardProps) {
-  const [isSpeaking, setIsSpeaking] = useState(false)
-
-  const speakJapanese = async (text: string) => {
-    if (isSpeaking) return
-
-    setIsSpeaking(true)
-    try {
-      const response = await fetch('/api/tts', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ text }),
-      })
-
-      if (!response.ok) {
-        throw new Error('TTS failed')
-      }
-
-      const { audio } = await response.json()
-      const audioData = `data:audio/mp3;base64,${audio}`
-      const audioElement = new Audio(audioData)
-      audioElement.play()
-    } catch (error) {
-      console.error('TTS error:', error)
-      if ('speechSynthesis' in window) {
-        window.speechSynthesis.cancel()
-        const utterance = new SpeechSynthesisUtterance(text)
-        utterance.lang = 'ja-JP'
-        utterance.rate = 0.8
-        window.speechSynthesis.speak(utterance)
-      }
-    } finally {
-      setIsSpeaking(false)
-    }
-  }
-
   return (
     <div className="bg-white dark:bg-zinc-900 rounded-lg shadow-md overflow-hidden">
       <button
@@ -122,12 +77,7 @@ export default function ParticleCard({ particle, isExpanded, onToggle }: Particl
                 {/* 예문 */}
                 <div className="space-y-2">
                   {usage.examples.map((example, exIdx) => (
-                    <ExampleItem
-                      key={exIdx}
-                      example={example}
-                      onSpeak={speakJapanese}
-                      isSpeaking={isSpeaking}
-                    />
+                    <ExampleItem key={exIdx} example={example} />
                   ))}
                 </div>
 
