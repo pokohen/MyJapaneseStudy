@@ -172,7 +172,7 @@ export default function GrammarStepPage({ category, onBack, onQuiz }: GrammarSte
                 <div className="flex flex-col items-center">
                   <span>문제 풀기</span>
                   <span className="text-sm font-normal opacity-80 mt-1">
-                    {type === 'patterns' ? '퍼즐로 예문 맞추기' : '4지선다 퀴즈'}
+                    {type === 'patterns' ? '퍼즐로 예문 맞추기' : '문제로 활용형 연습하기'}
                   </span>
                 </div>
               </Button>
