@@ -4,70 +4,15 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import Logo, { LogoIcon } from './Logo'
-
-// 아이콘 컴포넌트들
-function HomeIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-    </svg>
-  )
-}
-
-function HiraganaIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
-      <text x="50%" y="50%" dominantBaseline="central" textAnchor="middle" fontSize="16" fontWeight="bold">あ</text>
-    </svg>
-  )
-}
-
-function BookIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-    </svg>
-  )
-}
-
-function KanjiIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
-      <text x="50%" y="50%" dominantBaseline="central" textAnchor="middle" fontSize="14" fontWeight="bold">漢</text>
-    </svg>
-  )
-}
-
-function ChatIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
-    </svg>
-  )
-}
-
-// 햄버거 메뉴 아이콘 (애니메이션)
-function MenuIcon({ isOpen, className }: { isOpen: boolean; className?: string }) {
-  return (
-    <div className={`${className} relative`}>
-      <span
-        className={`absolute left-0 h-0.5 w-full bg-current rounded transition-all duration-300 ease-out ${
-          isOpen ? 'top-1/2 -translate-y-1/2 rotate-45' : 'top-1'
-        }`}
-      />
-      <span
-        className={`absolute left-0 top-1/2 -translate-y-1/2 h-0.5 w-full bg-current rounded transition-all duration-300 ease-out ${
-          isOpen ? 'opacity-0 scale-x-0' : 'opacity-100 scale-x-100'
-        }`}
-      />
-      <span
-        className={`absolute left-0 h-0.5 w-full bg-current rounded transition-all duration-300 ease-out ${
-          isOpen ? 'top-1/2 -translate-y-1/2 -rotate-45' : 'bottom-1'
-        }`}
-      />
-    </div>
-  )
-}
+import {
+  HomeIcon,
+  HiraganaIcon,
+  BookIcon,
+  KanjiIcon,
+  ChatIcon,
+  CloseIcon,
+  MenuIcon,
+} from './icons'
 
 const navItems = [
   { href: '/', label: '홈', Icon: HomeIcon },
@@ -150,9 +95,7 @@ export default function Header() {
             onClick={() => setIsDrawerOpen(false)}
             className="p-2 rounded-lg text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 hover:rotate-90 transition-all duration-300 active:scale-90 cursor-pointer"
           >
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            </svg>
+            <CloseIcon className="w-5 h-5" />
           </button>
         </div>
 
@@ -197,7 +140,15 @@ export default function Header() {
           <div className="flex items-center justify-center gap-2">
             <LogoIcon size={16} />
             <p className="text-xs text-zinc-500 dark:text-zinc-400">
-              MANABU LABS v1.0
+              MANABU LABS v1.0 with{' '}                                                                                       
+              <a
+                href="https://www.instagram.com/uni.pum/"                                                                      
+                target="_blank"                                                                                                
+                rel="noopener noreferrer"                                                                                      
+                className="hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors"                                     
+              >                                                                                                                
+                @uni.pum                                                                                                       
+              </a>  
             </p>
           </div>
         </div>
